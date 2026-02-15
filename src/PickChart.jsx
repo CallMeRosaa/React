@@ -8,7 +8,7 @@ const PickChart = ({ items = [{ id: 1, label: 'Digital Form', effort: 20, payoff
 
   return (
     <div className="w-full flex flex-col items-center justify-center bg-[#0A1025] border border-slate-800 rounded-xl p-4">
-      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="font-sans">
+      <svg width="100%" viewBox={`0 0 ${size} ${size}`} className="font-sans">
         {quadrants.map((q, i) => (
           <g key={i}>
             <rect x={padding + (q.x/100)*graphSize} y={padding + (graphSize - ((q.y+50)/100)*graphSize)} width={graphSize/2} height={graphSize/2} fill={q.bg} />
